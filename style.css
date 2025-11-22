@@ -79,7 +79,6 @@ a:visited {
 }
 
 #titleBar .sceneName {
-<<<<<<< HEAD
   display: inline-block;
   padding: 8px 24px;
   background: rgba(255, 255, 255, 0.1);
@@ -92,17 +91,6 @@ a:visited {
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-=======
-  width: 100%;
-  height: 100%;
-  line-height: 30px;
-  padding: 5px;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.8);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
 
   -moz-user-select: text;
   -webkit-user-select: text;
@@ -125,7 +113,6 @@ a:visited {
 #sceneListToggle,
 .viewControlButton {
   position: absolute;
-<<<<<<< HEAD
   width: 44px;
   height: 44px;
   padding: 10px;
@@ -141,15 +128,6 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
-=======
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: rgb(20,20,20);
-  background-color: rgba(20,20,20,0.8);
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
 }
 
 #fullscreenToggle:hover,
@@ -177,70 +155,10 @@ body.fullscreen-enabled #fullscreenToggle {
 }
 
 #autorotateToggle {
-<<<<<<< HEAD
   top: 20px;
   right: 74px;
   /* 20px + 44px + 10px gap */
   display: flex;
-=======
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: rgb(20,20,20);
-  background-color: rgba(20,20,20,0.8);
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
-}
-
-body.fullscreen-enabled #autorotateToggle {
-  right: 74px;
-}
-
-/* Scene List Toggle */
-#sceneListToggle {
-<<<<<<< HEAD
-  top: 90px;
-  left: 20px;
-  width: auto;
-  /* Allow expansion for text */
-  min-width: 44px;
-  justify-content: flex-start;
-  padding: 0;
-=======
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: rgb(20,20,20);
-  background-color: rgba(20,20,20,0.8);
-}
-
-.mobile #sceneListToggle {
-  width: 50px;
-  height: 50px;
-}
-
-#sceneListToggle .text {
-  position: absolute;
-  top: 5px;
-  left: 15px;
-  width: 100%;
-  line-height: 30px;
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
-}
-
-.mobile #sceneListToggle .text {
-  line-height: 40px;
-}
-
-#sceneListToggle .icon {
-  position: absolute;
-  top: 10px;
   left: 10px;
 }
 
@@ -324,59 +242,11 @@ body.view-control-buttons .viewControlButton {
 
 #fullscreenToggle.enabled .icon.off,
 #autorotateToggle.enabled .icon.off,
-#sceneListToggle.enabled .icon.off {
-  display: none;
-}
-
-
-/* --- Scene List (Side Menu) --- */
-#sceneList {
-  position: absolute;
-  top: 0;
-  left: -320px;
-  /* Hide off-screen */
-  padding-top: 100px;
-  /* Space for logo/toggle */
-  width: 320px;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background: rgba(20, 20, 20, 0.6);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 90;
-  /* Below logo/toggles */
-}
-
-#sceneList.enabled {
-  left: 0;
-}
 
 #sceneList .scenes {
   width: 100%;
-<<<<<<< HEAD
   background: transparent;
   padding: 0 10px;
-=======
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.8);
-}
-
-.mobile #sceneList {
-  width: 100%;
-  height: 100%;
-  left: -100%;
-}
-
-.mobile #sceneList.enabled {
-  margin-left: 100%;
-}
-
-#sceneList.enabled {
-  margin-left: 220px;
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
 }
 
 #sceneList .scene {
@@ -409,24 +279,9 @@ body.view-control-buttons .viewControlButton {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-<<<<<<< HEAD
 #sceneList .scene.current .text {
   color: #fff;
   font-weight: 600;
-=======
-.mobile #sceneList .scene .text {
-  line-height: 40px;
-}
-
-.no-touch #sceneList .scene:hover {
-  background-color: rgb(20,20,20);
-  background-color: rgba(20,20,20,0.8);
-}
-
-#sceneList .scene.current {
-  background-color: rgb(20,20,20);
-  background-color: rgba(20,20,20,0.8);
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
 }
 
 /* Hide scene list when only a single scene exists */
@@ -451,8 +306,8 @@ body.single-scene #sceneListToggle {
 }
 
 .link-hotspot-icon {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
@@ -460,7 +315,6 @@ body.single-scene #sceneListToggle {
 .link-hotspot-tooltip {
   position: absolute;
   left: 100%;
-<<<<<<< HEAD
   top: 50%;
   transform: translateY(-50%) translateX(10px);
   font-size: 14px;
@@ -470,23 +324,6 @@ body.single-scene #sceneListToggle {
   background: rgba(15, 23, 42, 0.9);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-=======
-  top: 14px; /* ( 60 - (16 + 2*8) ) / 2 */
-
-  margin-left: 3px;
-
-  font-size: 16px;
-
-  max-width: 300px;
-
-  padding: 8px 10px;
-
-  border-radius: 5px;
-
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.8);
-
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
   color: #fff;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -507,15 +344,10 @@ body.single-scene #sceneListToggle {
 .info-hotspot .info-hotspot-header {
   width: 40px;
   height: 40px;
-<<<<<<< HEAD
   border-radius: 50%;
   background-color: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(4px);
   border: 2px solid rgba(255, 255, 255, 0.8);
-=======
-  border-radius: 20px;
-  background-color: rgb(20,20,20);
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -562,54 +394,8 @@ body.single-scene #sceneListToggle {
 }
 
 .info-hotspot .info-hotspot-close-wrapper {
-<<<<<<< HEAD
   display: none;
   /* Simplified for modern look, usually click outside to close or X in modal */
-=======
-  position: absolute;
-  left: 260px;
-  top: 0;
-  height: 40px;
-  width: 40px;
-  border-top-right-radius: 5px;
-  background-color: rgb(0,0,0);
-  visibility: hidden;
-  -ms-transform: perspective(200px) rotateY(90deg);
-  -webkit-transform: perspective(200px) rotateY(90deg);
-  transform: perspective(200px) rotateY(90deg);
-  -ms-transform-origin: 0 50% 0;
-  -webkit-transform-origin: 0 50% 0;
-  transform-origin: 0 50% 0;
-  -webkit-transition: -ms-transform 0.3s 0.3s,
-                      -webkit-transform 0.3s 0.3s,
-                      transform 0.3s 0.3s,
-                      visibility 0s 0.6s;
-  transition: -ms-transform 0.3s 0.3s,
-              -webkit-transform 0.3s 0.3s,
-              transform 0.3s 0.3s,
-              visibility 0s 0.6s;
-}
-
-.desktop .info-hotspot.visible .info-hotspot-close-wrapper {
-  visibility: visible;
-  -ms-transform: perspective(200px) rotateY(0deg);
-  -webkit-transform: perspective(200px) rotateY(0deg);
-  transform: perspective(200px) rotateY(0deg);
-  -webkit-transition: -ms-transform 0.3s,
-                      -webkit-transform 0.3s,
-                      transform 0.3s,
-                      visibility 0s 0s;
-  transition: -ms-transform 0.3s,
-              -webkit-transform 0.3s,
-              transform 0.3s,
-              visibility 0s 0s;
-}
-
-.info-hotspot .info-hotspot-close-icon {
-  width: 70%;
-  height: 70%;
-  margin: 15%;
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
 }
 
 .info-hotspot .info-hotspot-text {
@@ -617,7 +403,6 @@ body.single-scene #sceneListToggle {
   width: 300px;
   top: 50px;
   left: 0;
-<<<<<<< HEAD
   padding: 16px;
   background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(16px);
@@ -626,13 +411,6 @@ body.single-scene #sceneListToggle {
   color: #cbd5e1;
   font-size: 14px;
   line-height: 1.6;
-=======
-  padding: 10px;
-  background-color: rgb(0,0,0);
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  overflow-y: auto;
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
   visibility: hidden;
   opacity: 0;
   transform: translateY(10px);
@@ -645,130 +423,7 @@ body.single-scene #sceneListToggle {
   transform: translateY(0);
 }
 
-<<<<<<< HEAD
 /* Mobile Adjustments */
-=======
-.info-hotspot-modal .info-hotspot-header {
-  position: absolute;
-  top: 60px;
-  left: 10px;
-  right: 10px;
-  width: auto;
-  height: 50px;
-  background-color: rgb(20,20,20);
-  background-color: rgba(20,20,20,0.8);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out 0.2s;
-  transition: opacity 0.3s ease-in-out 0.2s;
-}
-
-.info-hotspot-modal.visible .info-hotspot-header {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out 0.2s;
-  transition: opacity 0.3s ease-in-out 0.2s;
-}
-
-.info-hotspot-modal .info-hotspot-icon-wrapper {
-  width: 50px;
-  height: 50px;
-}
-
-.info-hotspot-modal .info-hotspot-icon {
-  width: 90%;
-  height: 90%;
-  margin: 5%;
-}
-
-.info-hotspot-modal .info-hotspot-title-wrapper {
-  position: absolute;
-  top: 0;
-  left: 50px;
-  right: 50px;
-  width: auto;
-  height: 50px;
-  padding: 0 10px;
-}
-
-.info-hotspot-modal .info-hotspot-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-
-.info-hotspot-modal .info-hotspot-title {
-  display: inline-block;
-  vertical-align: middle;
-
-  -moz-user-select: text;
-  -webkit-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
-.info-hotspot-modal .info-hotspot-close-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.8);
-  cursor: pointer;
-}
-
-.info-hotspot-modal .info-hotspot-close-icon {
-  width: 70%;
-  height: 70%;
-  margin: 15%;
-}
-
-.info-hotspot-modal .info-hotspot-text {
-  position: absolute;
-  top: 110px;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  padding: 10px;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.8);
-  overflow-y: auto;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-
-  -moz-user-select: text;
-  -webkit-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
-.info-hotspot-modal.visible .info-hotspot-text {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out 0.4s;
-  transition: opacity 0.3s ease-in-out 0.4s;
-}
-
-/* View control buttons */
-
-.viewControlButton {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: rgb(20,20,20);
-  background-color: rgba(20,20,20,0.8);
-}
-
-body.view-control-buttons .viewControlButton {
-  display: block;
-}
-
-/* Hide controls when width is too small */
->>>>>>> 3896bb205e80a5d4c1c9c54b41fc09e427a9f3f9
 @media (max-width: 600px) {
   #companyLogo img {
     height: 40px;
